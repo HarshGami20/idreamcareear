@@ -1,0 +1,23 @@
+:root {
+    --texthead: #1e405e;
+    --textsecondry: #314862;
+    --textcolor: #3d3e40;
+  }
+  .scroll {
+    animation: scrol 10s linear infinite alternate;
+  }
+  @keyframes scrol {
+    0% {
+      transform: translateX(0%); /* Start off-screen right */
+    }
+    100% {
+      transform: translateX(-100%); /* End off-screen left */
+    }
+  }
+  .hero-img {
+    cursor: pointer;
+    transition: all 0.35s ease-in;
+  }
+  .hero-img:hover {
+    scale: 1.123;
+  }
