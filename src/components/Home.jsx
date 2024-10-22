@@ -23,7 +23,7 @@ const Home = () => {
                 src="../assets/group3.webp"
                 className="transition ease-in duration-300 hover:scale-[1.123] h-[165px] w-[261px]" />
               <img
-                src="./src/assets/group2.webp"
+                src="/src/assets/group2.webp"
                 className="hero-img h-[246px] w-[261px]" />
             </div>
             <div className="flex flex-col gap-[20px]">
