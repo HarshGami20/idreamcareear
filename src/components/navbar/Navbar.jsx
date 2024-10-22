@@ -9,7 +9,7 @@ const Navbar = () => {
       <header>
         <nav className="relative h-24">
           <div className="w-screen flex items-center justify-center">
-            <div className="max-w-[90rem] w-full fixed top-0 z-10 bg-white rounded-xl border shadow-lg m-2">
+            <div className="boxn max-w-[90rem] w-full fixed top-0 z-10 bg-white rounded-xl border m-2">
 
               <div className="flex text-[16px] h-[70px] text-[var(--textgray)] items-center justify-start p-3">
                 {/* left logo divison */}
@@ -21,10 +21,28 @@ const Navbar = () => {
                 </div>
                 {/* center text links */}
                 <div className="flex items-start">
-                  <ul className="flex justify-between tracking-wide cursor-default">
-                    <li className="hover:bg-[#F3F4F5] py-2 px-4 rounded">Career Guidance</li>
-                    <li className="hover:bg-[#F3F4F5] py-2 px-4 rounded">Study Abroad</li>
-                    <li className="hover:bg-[#F3F4F5] py-2 px-4 rounded">College Application</li>
+                  <ul className="flex justify-between tracking-wide cursor-default text-sm">
+                    <li className="group hover:bg-[#F3F4F5] py-2 px-4 rounded">Career Guidance
+                      <ul className="absolute mt-2 hidden group-hover:flex  pr-10 p-4 flex-col gap-2 border rounded-2xl bg-white">
+                        <li className="">9th - 10th</li>
+                        <li>11th - 12th</li>
+                        <li>College - UG/PG</li>
+                      </ul>
+                    </li>
+                    <li className="group hover:bg-[#F3F4F5] py-2 px-4 rounded">Study Abroad
+                      <ul className="absolute mt-2 hidden group-hover:flex pr-10 p-4 flex-col gap-2 border rounded-2xl bg-white">
+                        <li>Guidence Program</li>
+                        <li>UK</li>
+                        <li>USA</li>
+                        <li>Canada</li>
+                        <li>Austrelia</li></ul>
+                    </li>
+                    <li className="group hover:bg-[#F3F4F5] py-2 px-4 rounded">College Application
+                      <ul className="absolute mt-2 hidden group-hover:flex  pr-10 p-4 flex-col gap-2 border rounded-2xl bg-white">
+                        <li>Liberal Arts</li>
+                        <li>Design: NID, NIFT and IIT</li>
+                        <li>CUET</li></ul>
+                    </li>
                     <li className="hover:bg-[#F3F4F5] py-2 px-4 rounded">Corporate-CSR</li>
                     <li className="hover:bg-[#F3F4F5] py-2 px-4 rounded">Counselors</li>
                     <li className="hover:bg-[#F3F4F5] py-2 px-4 rounded">Schools</li>

@@ -1,40 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-body{
-    font-family: "Poppins", sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 :root {
-    --btn-from: #00ACFF ;
-    --btn-to:#007FFF ;
-    --from:#fbfdff;
-    --to: #a3c4ff;
-    --texth: #1e405e;
-    --textgray: #314862cc;
-    --textcolor: #3D3E40;
-  }
-  .scroll {
-    animation: scrol 10s linear infinite alternate;
-    -webkit-animation: scrol 10s linear infinite alternate;
+  --btn-from: #00acff;
+  --btn-to: #007fff;
+  --from: #fbfdff;
+  --to: #a3c4ff;
+  --texth: #1e405e;
+  --textgray: #314862cc;
+  --textcolor: #3d3e40;
 }
-  @keyframes scrol {
-    0% {
-      transform: translateX(0%); /* Start off-screen right */
-    }
-    100% {
-      transform: translateX(-100%); /* End off-screen left */
-    }
+.scroll {
+  animation: scrol 10s linear infinite alternate;
+  -webkit-animation: scrol 10s linear infinite alternate;
+}
+@keyframes scrol {
+  0% {
+    transform: translateX(0%); /* Start off-screen right */
   }
-  .hero-img {
-    cursor: pointer;
-    transition: all 0.35s ease-in;
+  100% {
+    transform: translateX(-100%); /* End off-screen left */
   }
-  .hero-img:hover {
-    scale: 1.123;
-  }
+}
+.hero-img {
+  cursor: pointer;
+  transition: all 0.35s ease-in;
+}
+.hero-img:hover {
+  scale: 1.123;
+}
 
-  .slick-slider > div{
- margin:0 10px;
-  }
+.slick-slide > div {
+  margin:0 12px;
+}
+
+.boxs {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.boxn {
+  box-shadow: rgba(80, 99, 100, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 3px 3px;
+}

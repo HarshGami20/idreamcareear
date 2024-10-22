@@ -10,13 +10,14 @@ const Sliderslick = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 2.1,
         slidesToScroll: 1
-      }
+    }
     return (
         <>
             <Slider {...settings}>
                 {sliderlinks.map((link, index) => (
+
                     <div key={index} className='bg-white rounded-lg p-10 gap-5 my-20' >
                         <div className='flex flex-col'>
                             <h2 className='text-[16px] text-[var(--tectp)] my-4'>{link.top}</h2>

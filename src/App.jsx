@@ -14,11 +14,14 @@ import SharkTank from './components/SharkTank'
 import Faq from './components/Faq'
 import End from './components/End'
 import Footer from './components/Footer'
-
+import Popup from './components/popup/Popup'
 
 const App = () => {
+
   return (
     <>
+
+      <Popup />
       <Navbar />
       <Home />
       <Slider />
