@@ -20,7 +20,7 @@ const Home = () => {
           <div className="flex gap-[20px]">
             <div className="flex flex-col gap-[20px]">
               <img
-                src="./src/assets/group3.webp"
+                src="../assets/group3.webp"
                 className="transition ease-in duration-300 hover:scale-[1.123] h-[165px] w-[261px]" />
               <img
                 src="./src/assets/group2.webp"
