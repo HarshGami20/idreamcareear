@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { MdClose } from 'react-icons/md'
 import './popup.css'
-import Whatsapp from './whatsapp'
+import Whatsapp from './Whatsapp'
 
 const Popup = () => {
 
