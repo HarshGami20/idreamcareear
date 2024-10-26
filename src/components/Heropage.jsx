@@ -1,5 +1,5 @@
 
-const Home = () => {
+const Heropage = () => {
   return (
     <>
       <section className="flex font-[sans-serif] justify-center p-10 items-center">
@@ -41,4 +41,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Heropage

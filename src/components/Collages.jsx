@@ -1,5 +1,5 @@
 
-const Slider = () => {
+const Colleges = () => {
     return (
             <div className="h-28 bg-white mx-5 flex items-center justify-center">
                 <div className="p-5">
@@ -20,4 +20,4 @@ const Slider = () => {
     )
 }
 
-export default Slider
+export default Colleges

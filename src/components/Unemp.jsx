@@ -14,8 +14,8 @@ const Unemp = () => {
         var tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".graph",
-                start: 'top 70%',
-                end: 'bottom 40%',
+                start: 'top 50%',
+                end: 'bottom 50%',
                 ease: "power1",
                 scrub: true,
                 // markers: true

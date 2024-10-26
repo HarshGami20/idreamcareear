@@ -1,5 +1,5 @@
-import React from "react"
 import { IoIosCall } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 
 
@@ -13,20 +13,20 @@ const Navbar = () => {
 
               <div className="flex text-[16px] h-[70px] text-[var(--textgray)] items-center justify-start p-3">
                 {/* left logo divison */}
-                <div className="">
+                <Link to='/'>
                   <img
                     src="./src/assets/Logo.png"
                     alt="logo"
                     className="h-8 mx-10" />
-                </div>
+                </Link>
                 {/* center text links */}
                 <div className="flex items-start">
                   <ul className="flex justify-between tracking-wide cursor-default text-sm">
                     <li className="group hover:bg-[#F3F4F5] py-2 px-4 rounded">Career Guidance
                       <ul className="absolute mt-2 hidden group-hover:flex  pr-10 p-4 flex-col gap-2 border rounded-2xl bg-white">
-                        <li className="">9th - 10th</li>
-                        <li>11th - 12th</li>
-                        <li>College - UG/PG</li>
+                        <Link to='/career-guidance-for-9th-and-10th' className="hover:text-blue-700">9th - 10th</Link>
+                        <Link to='/career-guidance-for-11th-and-12th' className="hover:text-blue-700">11th - 12th</Link>
+                        <Link to='/career-guidance-after-graduation' className="hover:text-blue-700">College - UG/PG</Link>
                       </ul>
                     </li>
                     <li className="group hover:bg-[#F3F4F5] py-2 px-4 rounded">Study Abroad

@@ -1,42 +1,50 @@
-
-import Navbar from './components/navbar/Navbar'
-import Home from './components/Home'
-import Slider from './components/Slider'
-import Success from './components/sucess-slider/Success'
-import Unemp from './components/Unemp'
-import Counselors from './components/Counselors'
-import Sun from './components/Sun'
-import Hover from './components/Hover'
-import Strean from './components/Strean'
-import News from './components/News'
-import Invester from './components/Invester'
-import SharkTank from './components/SharkTank'
-import Faq from './components/Faq'
-import End from './components/End'
-import Footer from './components/Footer'
-import Popup from './components/popup/Popup'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import AppLayout from './AppLayout'
+import About from './pages/About'
+import Careerguidance from './pages/Careerguidance'
+import Home from './pages/Home'
+import Careerguidance11_12 from "./pages/Careerguidance11_12";
+import Careerguidanceafter from "./pages/Careerguidanceafter";
 
 const App = () => {
 
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <AppLayout />,
+      children: [
+        {
+          path: '/',
+          element: <Home />
+        },
+        {
+          path: 'about',
+          element: <About />
+        },
+        {
+          path: 'career-guidance-for-9th-and-10th',
+          element: <Careerguidance />
+        },
+        {
+          path: 'career-guidance-for-11th-and-12th',
+          element: <Careerguidance11_12 />
+        },
+        {
+          path: 'career-guidance-after-graduation',
+          element: <Careerguidanceafter />
+        }
+      ]
+    },
+  ]);
+
+
   return (
     <>
-
-      <Popup />
-      <Navbar />
-      <Home />
-      <Slider />
-      <Success />
-      <Unemp />
-      <Counselors />
-      <Sun />
-      <Hover />
-      <Strean />
-      <News />
-      <Invester />
-      <SharkTank />
-      <Faq />
-      <End />
-      <Footer />
+      <RouterProvider router={router} />
     </>
   )
 }

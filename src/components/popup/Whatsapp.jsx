@@ -9,7 +9,7 @@ const Whatsapp = () => {
     const handleClick = () => {
         setTogglee(!togglee);
     };
-
+ 
     return (
         <div className={togglee ? 'fixed boxs flex-col flex m-4 gap-4 bg-white z-50 p-4 rounded-3xl right-0 bottom-0' : 'hidden'}>
             <button onClick={handleClick} className='absolute top-3 right-5 text-xl'><MdClose /></button>

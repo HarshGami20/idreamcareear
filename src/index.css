@@ -24,8 +24,12 @@ body {
     transform: translateX(0%); /* Start off-screen right */
   }
   100% {
-    transform: translateX(-100%); /* End off-screen left */
-  }
+    transform: translateX(-60%);
+    -webkit-transform: translateX(-60%);
+    -moz-transform: translateX(-60%);
+    -ms-transform: translateX(-60%);
+    -o-transform: translateX(-60%);
+}
 }
 .hero-img {
   cursor: pointer;
