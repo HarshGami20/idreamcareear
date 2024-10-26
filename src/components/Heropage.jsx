@@ -28,7 +28,7 @@ const Heropage = () => {
             </div>
             <div className="flex flex-col gap-[20px]">
               <img
-                src="./src/assets/group1.webp"
+                src="src/assets/group1.webp"
                 className="hero-img h-[227px] w-[261px]" />
               <img
                 src="./src/assets/group4.webp"
